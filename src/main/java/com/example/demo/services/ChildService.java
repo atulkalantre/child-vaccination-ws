@@ -24,9 +24,14 @@ public class ChildService {
 	{
 		return mcr.findAll();
 	}
+	
 	public List<Child>getChild(Parent parentid)
 	{
 		return mcr.getAllChild(parentid);
+	}
+	
+	public void deleteChild(int childId) {
+	     mcr.deleteById(childId);
 	}
 
 	
